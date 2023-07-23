@@ -1,94 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>Snake By Muhammad Hasan Firdaus</title>
-	<style type="text/css">
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		body {
-			background-color: #333;
-			text-align: center;
-			font-family: sans-serif;
-		}
-		main {
-			max-width: 800px;
-			margin: auto;
-		}
-		#canvas-container {
-			text-align: center;
-			max-width: 800px;
-			aspect-ratio: 8/5;
-			background-color: #fff;
-		}
-		#canvas-container canvas {
-			width: 100%;
-		}
-		#timeline {
-			display: grid;
-			grid-template-columns: auto minmax(10px, 1fr) auto;
-			background-color: #4e7ea3;
-			margin: 10px 0;
-			border-radius: 10px;
-			padding: 10px;
-			color: #fff;
-		}
-		#game-control {
-			text-align: center;
-			margin: 10px 0;
-		}
-		#game-control button {
-			background-color: #4e7ea3;
-			padding: 10px;
-			border-radius: 10px;
-			border: none;
-			color: #fff;
-			cursor: pointer;
-		}
-		#joystick {
-			text-align: center;
-		}
-		#joystick button {
-			height: 50px;
-			width: 50px;
-			text-align: center;
-			justify-content: center;
-			display: inline-flex;
-			padding: 15px;
-			border-radius: 10px;
-		}
-		.inline-block {
-			display: inline-block;
-		}
-		.spacer {
-			width: 50px;
-			display: inline-block;
-		}
-	</style>
-</head>
-<body>
-	<main>
-		<div id="timeline">
-			<div id="score">0000</div>
-			<div id="brand">Snake</div>
-			<div id="time">0 s</div>
-		</div>
-		<div id="canvas-container"></div>
-		<div id="game-control"></div>
-		<div id="joystick"></div>
-	</main>
-	<script type="text/javascript" src="game.js"></script>
-	<script type="text/javascript">
-		var game=new Game({
-			container:document.getElementById('canvas-container'),
-			score:document.getElementById('score'),
-			time:document.getElementById('time'),
-			control:document.getElementById('game-control'),
-			joystick:document.getElementById('joystick')
-		});
-	</script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnakeJS by Muhammad Hasan Firdaus</title>
+    <link rel="stylesheet" type="text/css" href="/src/style.css" />
+  </head>
+  <body>
+    <div
+      id="app"
+      class="flex items-center justify-center min-h-screen bg-teal-950"
+    ></div>
+    <noscript>You must enable JavaScript to run this app!</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
