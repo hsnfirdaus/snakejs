@@ -64,6 +64,7 @@ export default class SnakeJS {
 				to: "right",
 			});
 		}
+		this.layout.setScore("0000");
 		this.draw();
 		this.newFood();
 		this.initGame();
