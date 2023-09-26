@@ -1,6 +1,6 @@
 # SnakeJS
 
-Snake game using HTML Canvas & JavaScript. Demo: [snakejs.hasanfirdaus.my.id](https://snakejs.hasanfirdaus.my.id).
+Snake game using HTML Canvas & JavaScript. Demo: [snakejs.hasanfirdaus.com](https://snakejs.hasanfirdaus.com).
 
 ![Screenshot tampilan SnakeJS](screenshot.png)
 
